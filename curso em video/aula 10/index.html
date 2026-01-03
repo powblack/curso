@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamica</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: linear-gradient(to bottom, white, rgb(3, 3, 99));
+
+        }
+        .imagem {
+            width: 80px;
+            text-align: center;
+        } 
+
+
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(max-width:500px)" srcset="imagens/imagem_P.png" type="image/png">
+        <source media="(max-width:1000px)" srcset="Imagens/imagem_M.png" type="image/png">
+        <img src="imagens/imagem_G.png" alt="imagem principal" class="imagem">
+    </picture>
+    <h1>Next page</h1>
+    <p><a href="page002.html" >click here</a></p>
+
+    <h1>aprendendo a reproduzir audio</h1>
+    <audio src="/curso em video/aula 10/audio/On The Flip - The Grey Room _ Density & Time.mp3" controls></audio>
+
+    <h1 style="text-align: center;">Video do youtube</h1>
+    <div style="display: flexbox; text-align: center;">
+        <a href="page002.html">
+            <img src="imagens/video.png" alt="">
+        </a>  
+    </div>
+</body>
+</html>
