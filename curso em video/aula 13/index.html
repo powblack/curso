@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: blueviolet;
+            border: 2px solid black;
+            text-align: center;
+            height: 100px;
+            width: 31.5%;
+        }
+
+        div:hover {
+            background-color: rgb(66, 2, 126);
+        }
+        
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>01
+        <p>Spam</p>
+    </div>
+    <div>02</div>
+    <div>03</div>
+</body>
+</html>

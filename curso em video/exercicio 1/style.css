@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/*
+variaveis no css
+o root é uma pseudoclasse 
+no inicio ela vale para todo o codigo
+
+obs: dessa forma case for trocar toda paleta de cores , somente trocar o valor da cor 
+pois a variavel vai permancer no locais onde ficar as cores.
+*/
+
+:root {
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+
+    font-family: 'fonte'; /* Nome que você usará no CSS */
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+        formatos de fontes
+        opentype (otf)
+        truetype (ttf)
+        truetype-aat (apple)
+        embedeed-opentype
+        svg
+
+    */
+
+}
+
+header {
+
+    background-image: linear-gradient(to top, rgb(1, 66, 36) 20%, rgb(5, 179, 92) 80%);
+}
+
+nav {
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--cor4);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition-duration: 1s;
+}
+
+body header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+main {
+    background-color: var(--cor-3);
+    padding-bottom: 20px;
+    
+}
+
+.general {
+    min-width: 300px;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+
+.video {
+
+    display: block;
+    background-color: var(--cor5);
+    margin: 0px, -100px, 30px, -100px;
+
+}
+
+
+h1 {
+    padding: 10px;
+    font-family: fonte;
+    background-image: linear-gradient(to right, #007231, rgb(2, 133, 46), rgb(247, 248, 247));
+}
+
+h2 {
+    font-family: fonte;
+    padding: 10px;
+    margin: 20px;   
+    background-image: linear-gradient(to right, #007231, rgb(2, 133, 46), rgb(247, 248, 247));
+}
+
+.branco {
+    color: white;
+}
+
+.titulo {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+.sub-titulo {
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+aside {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    box-shadow: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+aside h3 {
+    padding-bottom: 10px;
+}
+
+aside ul {
+    padding: 30px; 
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+footer p {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#titulo1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-size: 2em;
+}
+
+
+#titulo2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+    font-size: 2em;
+
+}
+
+#titulo3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: cadetblue;
+    font-size: 2em;
+
+}
+
+.texto {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+
